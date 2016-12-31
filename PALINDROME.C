@@ -11,8 +11,11 @@ void main()
         temp=temp/10;
    }
    if(n==rev)
-   printf("YES");
+   {
+       printf("YES");
+   }
    else
-   printf("NO");
- }  
-   
+   {
+       printf("NO");
+   } 
+}
