@@ -1,0 +1,64 @@
+#include<stdio.h>
+void main()
+{
+    int n,i,j,c;
+    int a[9][9]={0};
+    printf("Enter the order of the square matrix");
+    scanf("%d",&n);
+    i=0;
+    j=n/2;
+    c=1;
+    a[i][j]=c++;
+    while(c<=n*n)
+    {
+        if(i!=0)
+        {
+            i=i-1;
+        }
+        else
+        {
+            i=n-1;
+        }
+        if(j!=n-1)
+        {
+            j=j+1;
+        }
+        else
+        {
+            j=0;
+        }
+        if(a[i][j]==0)
+        {
+            a[i][j]=c;
+        }
+        else
+        {
+            if(i==n-1)
+            {
+                i=1;
+            }
+            else
+            {
+                i=i+2;
+            }
+            if(j==0)
+            {
+                j=n-1;
+            }
+            else
+            {
+                j=j-1;
+            }
+            a[i][j]=c;
+        }
+        c=c+1;
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+}
