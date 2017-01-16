@@ -7,9 +7,8 @@ int main(void)
 	j=l/100;
 	while(n!=0)
 	{
-	    m=n;
-        n=n/10;
-	   
+       	   m=n;
+      	   n=n/10;
 	}
 	m=j;
 	printf("%d0%d",j,m);
