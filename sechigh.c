@@ -12,14 +12,14 @@ int main(void)
 	int high=0,sechigh=0;
 	for(i=0;i<n;i++)
 	{
-	    if(high<i)
+	    if(high<a[i])
 	    {
 	        sechigh=high;
-	        high=i;
+	        high=a[i];
 	    }
-	    else if(sechigh<i)
+	    else if(sechigh<a[i])
 	    {
-	        sechigh=i;
+	        sechigh=a[i];
 	    }
 	}
 	printf("The second highest is %d",sechigh);
